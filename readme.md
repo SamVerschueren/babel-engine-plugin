@@ -37,7 +37,7 @@ Module maintainers often only target Node.js and don't really care about browser
 
 The most popular Webpack loader for Babel, [`babel-loader`](https://github.com/babel/babel-loader), describes that you should [exclude `node_modules`](https://github.com/babel/babel-loader#babel-loader-is-slow) because you should transpile as few files as possible. This means, you will also exclude all the modules that utilize the new ES2016 features.
 
-This Webpack plugin only transpiles modules in `node_modules`, if you need to transpile your source files as well, use `babel-loader`. This plugin checks checks the [`engines`](https://docs.npmjs.com/files/package.json#engines) field in `package.json` and only transpiles the dependency if it does not support Node.js 0.10.
+This Webpack plugin only transpiles modules in `node_modules`, if you need to transpile your source files as well, use `babel-loader`. This plugin checks the [`engines`](https://docs.npmjs.com/files/package.json#engines) field in `package.json` and only transpiles the dependency if it does not support Node.js 0.10.
 
 The full discussion can be found [here](https://github.com/sindresorhus/ama/issues/446).
 
