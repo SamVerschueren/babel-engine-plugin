@@ -39,7 +39,7 @@
     "get-urls": "^7.0.0",
     "pify": "^2.3.0",
     "uglifyjs-webpack-plugin": "^0.4.0",
-    "webpack": "^2.3.2",
+    "webpack": "^3.1.0",
     "xo": "*"
   }
 }
