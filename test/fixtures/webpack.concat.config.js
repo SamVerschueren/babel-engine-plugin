@@ -3,7 +3,6 @@ const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const BabelEnginePlugin = require('../../');
 const webpack = require('webpack')
-console.log(webpack.optimize)
 
 module.exports = {
 	entry: path.join(__dirname, '/app.concat.js'),
