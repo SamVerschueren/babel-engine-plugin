@@ -2,7 +2,6 @@
 const BabelModuleTemplate = require('./lib/babel-module-template');
 
 class BabelEnginePlugin {
-
 	constructor(options) {
 		this._options = Object.assign({}, options);
 	}

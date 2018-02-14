@@ -14,7 +14,7 @@ module.exports = {
 		new BabelEnginePlugin({
 			presets: ['env']
 		}),
-        new webpack.optimize.ModuleConcatenationPlugin(),
-		new UglifyJSPlugin(),
+		new webpack.optimize.ModuleConcatenationPlugin(),
+		new UglifyJSPlugin()
 	]
 }
