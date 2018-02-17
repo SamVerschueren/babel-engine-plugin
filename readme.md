@@ -44,11 +44,20 @@ The full discussion can be found [here](https://github.com/sindresorhus/ama/issu
 
 ## API
 
-### new BabelEnginePlugin([options])
+### new BabelEnginePlugin([babelOptions, [pluginOptions]])
 
-#### options
+#### babelOptions
 
 See [`babel` options](https://babeljs.io/docs/usage/api/#options).
+
+#### pluginOptions
+
+##### verbose
+
+Type: `boolean`<br>
+Default: `true`
+
+By disabling verbose logging, the plugin will only print the warning per package once.
 
 
 ## Related

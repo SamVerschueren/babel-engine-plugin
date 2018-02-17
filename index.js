@@ -2,8 +2,11 @@
 const BabelModuleTemplate = require('./lib/babel-module-template');
 
 class BabelEnginePlugin {
-	constructor(options) {
-		this._options = Object.assign({}, options);
+	constructor(babelOptions, options) {
+		this._options = {
+			babel: Object.assign({}, babelOptions),
+			plugin: Object.assign({verbose: true}, options)
+		};
 	}
 
 	apply(compiler) {
