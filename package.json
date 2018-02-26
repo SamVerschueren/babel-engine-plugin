@@ -1,6 +1,6 @@
 {
   "name": "babel-engine-plugin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Webpack plugin that transpiles dependencies targeting Node.js versions newer than Node.js 0.10",
   "license": "MIT",
   "repository": "SamVerschueren/babel-engine-plugin",
