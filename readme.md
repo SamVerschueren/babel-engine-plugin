@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save--dev babel-engine-plugin
+$ npm install --save-dev babel-engine-plugin
 ```
 
 
