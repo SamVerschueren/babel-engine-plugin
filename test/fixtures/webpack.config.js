@@ -1,7 +1,7 @@
 'use strict';
 const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const BabelEnginePlugin = require('../../');
+const BabelEnginePlugin = require('../..');
 
 module.exports = {
 	entry: path.join(__dirname, '/app.js'),
@@ -15,4 +15,4 @@ module.exports = {
 		}),
 		new UglifyJSPlugin()
 	]
-}
+};

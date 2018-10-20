@@ -1,8 +1,8 @@
 'use strict';
 const path = require('path');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
-const BabelEnginePlugin = require('../../');
-const webpack = require('webpack')
+const webpack = require('webpack');
+const BabelEnginePlugin = require('../..');
 
 module.exports = {
 	entry: path.join(__dirname, '/app.concat.js'),
@@ -17,4 +17,4 @@ module.exports = {
 		new webpack.optimize.ModuleConcatenationPlugin(),
 		new UglifyJSPlugin()
 	]
-}
+};

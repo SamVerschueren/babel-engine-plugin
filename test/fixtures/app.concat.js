@@ -1,3 +1,3 @@
-import {process} from './lib'
+import {process} from './lib';
 
-process()
+process();

@@ -10,9 +10,15 @@ class BabelEnginePlugin {
 	}
 
 	apply(compiler) {
-		compiler.plugin('compilation', compilation => {
-			compilation.moduleTemplate.apply(new BabelModuleTemplate(compilation, this._options));
-		});
+		if (compiler.hooks) {
+			compiler.hooks.compilation.tap('BabelEnginePlugin', compilation => {
+				new BabelModuleTemplate(compilation, this._options).apply(compilation.moduleTemplates.javascript);
+			});
+		} else {
+			compiler.plugin('compilation', compilation => {
+				compilation.moduleTemplate.apply(new BabelModuleTemplate(compilation, this._options));
+			});
+		}
 	}
 }
 
