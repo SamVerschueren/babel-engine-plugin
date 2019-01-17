@@ -59,6 +59,13 @@ Default: `true`
 
 By disabling verbose logging, the plugin will only print the warning per package once.
 
+##### silent
+
+Type: `boolean`<br>
+Default: `false`
+
+By disabling verbose logging and enabling silent logging, the plugin will not print any warnings.
+
 
 ## Related
 
