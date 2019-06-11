@@ -12,7 +12,7 @@ module.exports = {
 	},
 	plugins: [
 		new BabelEnginePlugin({
-			presets: ['env']
+			presets: ['@babel/preset-env']
 		}),
 		new webpack.optimize.ModuleConcatenationPlugin(),
 		new UglifyJSPlugin()

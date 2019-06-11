@@ -11,7 +11,7 @@ module.exports = {
 	},
 	plugins: [
 		new BabelEnginePlugin({
-			presets: ['env']
+			presets: ['@babel/preset-env']
 		}, {
 			verbose: false
 		}),
