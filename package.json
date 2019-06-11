@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.4.5",
-    "ava": "*",
+    "ava": "^1",
     "get-urls": "^7.0.0",
     "pify": "^2.3.0",
     "uglifyjs-webpack-plugin": "^0.4.0",
@@ -44,7 +44,10 @@
   },
   "xo": {
     "rules": [
-      ["ava/no-import-test-files", false]
+      [
+        "ava/no-import-test-files",
+        false
+      ]
     ]
   }
 }
